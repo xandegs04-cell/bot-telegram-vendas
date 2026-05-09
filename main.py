@@ -11,7 +11,7 @@ MINHA_CHAVE_PIX = "3a362b35-db5e-4123-87d0-d8ed3cabe1b2"
 MEU_USUARIO = "xandegs04" 
 
 # COLOQUE O LINK DO SEU VÍDEO ABAIXO (Deve terminar em .mp4)
-VIDEO_URL = "https://v55.erome.com/5727/tuIdWijm/0vOQKjgs_720p.mp4"
+VIDEO_URL = "https://v45.erome.com/4578/sD17bCbg/Vk21ce5K_720p.mp4"
 
 GRUPO_VIP = "https://t.me/+QpgHUO0MjnlkZDBh"
 # =================================================
@@ -28,8 +28,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 """
     botoes = [
         [InlineKeyboardButton("📆 MENSAL R$15", callback_data="mensal")],
-        [InlineKeyboardButton("📆 3 MESES R$20NN", callback_data="3meses")],
-        [InlineKeyboardButton("👑 VITALÍCIO R$35", callback_data="vitalicio")]
+        [InlineKeyboardButton("📆 3 MESES R$25", callback_data="3meses")],
+        [InlineKeyboardButton("👑 VITALÍCIO R$50", callback_data="vitalicio")]
     ]
     
     # Se for comando /start novo, manda o vídeo
