@@ -7,7 +7,7 @@ MINHA_CHAVE_PIX = "3a362b35-db5e-4123-87d0-d8ed3cabe1b2"
 MEU_USUARIO = "xandegs04" 
 
 # MÍDIA
-VIDEO_URL = "https://v45.erome.com/4578/sD17bCbg/Vk21ce5K_720p.mp4"
+VIDEO_URL = "https://files.catbox.moe/btcjb8.mp4"
 FOTO_BACKUP = "https://famosasnuas.net/catarina-paolino-ruiva-do-tiktok-so-de-calcinha/"
 GRUPO_VIP = "https://t.me/+QpgHUO0MjnlkZDBh"
 # =================================================
