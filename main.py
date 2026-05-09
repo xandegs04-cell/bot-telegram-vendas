@@ -22,8 +22,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 """
     botoes = [
         [InlineKeyboardButton("📆 MENSAL R$15", callback_data="mensal")],
-        [InlineKeyboardButton("📆 3 MESES R$25", callback_data="3meses")],
-        [InlineKeyboardButton("👑 VITALÍCIO R$50", callback_data="vitalicio")]
+        [InlineKeyboardButton("📆 3 MESES R$20", callback_data="3meses")],
+        [InlineKeyboardButton("👑 VITALÍCIO R$30", callback_data="vitalicio")]
     ]
     
     markup = InlineKeyboardMarkup(botoes)
