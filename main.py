@@ -3,16 +3,11 @@ from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandle
 
 # ================= CONFIGURAÇÕES =================
 TOKEN = "8790503034:AAHSTzB5uiGpdN4DhrLenVvJxbgNa6BaNYE"
-
-# Sua chave Pix
 MINHA_CHAVE_PIX = "3a362b35-db5e-4123-87d0-d8ed3cabe1b2"
-
-# Seu @ no Telegram (sem o @)
 MEU_USUARIO = "xandegs04" 
 
-# COLOQUE O LINK DO SEU VÍDEO ABAIXO (Deve terminar em .mp4)
-VIDEO_URL = "https://v45.erome.com/4578/sD17bCbg/Vk21ce5K_720p.mp4"
-
+# Link da Foto (que já sabemos que funciona)
+FOTO_URL = "https://famosasnuas.net/catarina-paolino-ruiva-do-tiktok-so-de-calcinha/"
 GRUPO_VIP = "https://t.me/+QpgHUO0MjnlkZDBh"
 # =================================================
 
@@ -32,15 +27,14 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         [InlineKeyboardButton("👑 VITALÍCIO R$50", callback_data="vitalicio")]
     ]
     
-    # Se for comando /start novo, manda o vídeo
     if update.message:
-        await update.message.reply_video(
-            video=VIDEO_URL,
+        # Usando PHOTO para garantir que o bot responda
+        await update.message.reply_photo(
+            photo=FOTO_URL,
             caption=texto,
             reply_markup=InlineKeyboardMarkup(botoes),
             parse_mode="Markdown"
         )
-    # Se for o botão "voltar", edita a legenda do vídeo que já existe
     else:
         query = update.callback_query
         await query.edit_message_caption(
@@ -89,10 +83,9 @@ Chave Pix:
 
 if __name__ == '__main__':
     app = ApplicationBuilder().token(TOKEN).build()
-    
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CallbackQueryHandler(start, pattern="voltar"))
     app.add_handler(CallbackQueryHandler(plano))
     
-    print("BOT ONLINE - AGORA COM VÍDEO")
+    print("BOT ONLINE - AGORA COM TEXTOS ATUALIZADOS")
     app.run_polling()
