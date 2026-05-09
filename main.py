@@ -6,8 +6,8 @@ TOKEN = "8790503034:AAHSTzB5uiGpdN4DhrLenVvJxbgNa6BaNYE"
 MINHA_CHAVE_PIX = "3a362b35-db5e-4123-87d0-d8ed3cabe1b2"
 MEU_USUARIO = "xandegs04" 
 
-VIDEO_URL = "https://cdn.discordapp.com/attachments/1462641309264248832/1502795489370964148/0509_1.gif?ex=6a0102dd&is=69ffb15d&hm=a4dcc47751fc980cdeda8a98da8d61a14ca675fa9fc20131417134c312de4526&"
-FOTO_PRINCIPAL = "https://famosasnuas.net/catarina-paolino-ruiva-do-tiktok-so-de-calcinha/"
+VIDEO_URL = "https://famosasnuas.net/catarina-paolino-ruiva-do-tiktok-so-de-calcinha/"
+FOTO_PRINCIPAL = "https://cdn.discordapp.com/attachments/1462641309264248832/1502795489370964148/0509_1.gif?ex=6a0102dd&is=69ffb15d&hm=a4dcc47751fc980cdeda8a98da8d61a14ca675fa9fc20131417134c312de4526&"
 # =================================================
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
