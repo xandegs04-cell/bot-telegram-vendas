@@ -7,10 +7,12 @@ TOKEN = "8790503034:AAHSTzB5uiGpdN4DhrLenVvJxbgNa6BaNYE"
 # Sua chave Pix
 MINHA_CHAVE_PIX = "3a362b35-db5e-4123-87d0-d8ed3cabe1b2"
 
-# Seu @ no Telegram (sem o @) para receber o comprovante
+# Seu @ no Telegram (sem o @)
 MEU_USUARIO = "xandegs04" 
 
-FOTO = "https://famosasnuas.net/catarina-paolino-ruiva-do-tiktok-so-de-calcinha/"
+# COLOQUE O LINK DO SEU VÍDEO ABAIXO (Deve terminar em .mp4)
+VIDEO_URL = "https://v55.erome.com/5727/tuIdWijm/0vOQKjgs_720p.mp4"
+
 GRUPO_VIP = "https://t.me/+QpgHUO0MjnlkZDBh"
 # =================================================
 
@@ -26,18 +28,19 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 """
     botoes = [
         [InlineKeyboardButton("📆 MENSAL R$15", callback_data="mensal")],
-        [InlineKeyboardButton("📆 3 MESES R$25", callback_data="3meses")],
-        [InlineKeyboardButton("👑 VITALÍCIO R$50", callback_data="vitalicio")]
+        [InlineKeyboardButton("📆 3 MESES R$20NN", callback_data="3meses")],
+        [InlineKeyboardButton("👑 VITALÍCIO R$35", callback_data="vitalicio")]
     ]
     
-    # Se for comando /start novo, manda foto. Se for "voltar", edita a legenda.
+    # Se for comando /start novo, manda o vídeo
     if update.message:
-        await update.message.reply_photo(
-            photo=FOTO,
+        await update.message.reply_video(
+            video=VIDEO_URL,
             caption=texto,
             reply_markup=InlineKeyboardMarkup(botoes),
             parse_mode="Markdown"
         )
+    # Se for o botão "voltar", edita a legenda do vídeo que já existe
     else:
         query = update.callback_query
         await query.edit_message_caption(
@@ -91,5 +94,5 @@ if __name__ == '__main__':
     app.add_handler(CallbackQueryHandler(start, pattern="voltar"))
     app.add_handler(CallbackQueryHandler(plano))
     
-    print("BOT ONLINE - CONTEÚDO PRIVACY/ONLY")
+    print("BOT ONLINE - AGORA COM VÍDEO")
     app.run_polling()
