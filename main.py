@@ -94,7 +94,7 @@ Chave Pix:
 3. Após o envio, eu te liberarei o link do grupo!
 """
     botoes = [
-        [InlineKeyboardButton("📤 ENVIAR COMPROVANTE", url=f"https://t.me/cavalo67")],
+        [InlineKeyboardButton("📤 ENVIAR COMPROVANTE", url=f"https://t.me/joseaura67")],
         [InlineKeyboardButton("⬅️ VOLTAR", callback_data="voltar")]
     ]
 
